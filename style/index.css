@@ -13,11 +13,22 @@ body {
   height: 100vh;
   align-items: center;
   align-content: center;
-  background-color: rgb(107, 0, 164);
+  background-color: black;
 }
 
 .group-form {
   margin-bottom: 10px;
+}
+
+.group-form button {
+  padding: 10px;
+  border: none;
+  background-color: rgb(107, 0, 164);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  width: 5vw;
 }
 
 .container {
@@ -39,9 +50,13 @@ body {
   height: 30px;
   border-radius: 5px;
   border: none;
-  background-color: rgb(179, 0, 255);
+  background-color: rgb(107, 0, 164);
   padding-left: 10px;
   color: white;
   font-weight: bold;
   width: 25vw;
+}
+.container input::-webkit-input-placeholder {
+  color: white;
+  font-weight: bold;
 }

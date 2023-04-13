@@ -17,15 +17,19 @@
         <label for="email">E-mail</label>
 
       </div>
-      <input type="text" name="email" id="email" placeholder="Exemple: junin@gmail.com">
+      <input type="text" name="email" id="email" placeholder="Exemple: junin@gmail.com" onchange="validaEmail()">
     </div>
     <div class="group-form">
       <div class="label">
         <label for="password">Senha</label>
       </div>
-      <input type="password" name="password" id="password">
+      <input type="password" name="password" id="password" onchange="validaPassword()">
+    </div>
+    <div class="group-form">
+      <button>Entrar</button>
     </div>
   </div>
+  <script src="javascript/login.js"></script>
 </body>
 
 </html>
