@@ -13,7 +13,6 @@ function validaEmail() {
     email.style.border = 'none';
     alert.style.display = 'none';
     email.style.border = '';
-
   }
 }
 
