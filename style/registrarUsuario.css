@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    background-color: black;
+}
+
+.group-form {
+    margin-bottom: 10px;
+}
+
+.group-form button {
+    padding: 10px;
+    border: none;
+    background-color: purple;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 5vw;
+}
+
+.group-form h1 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.group-form .alert {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+    background-color: orange;
+    border-radius: 5px;
+    display: none;
+}
+
+.group-form a {
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
+
+.group-form h1>span {
+    color: purple;
+}
+
+.container {
+    margin: auto !important;
+    padding: 15px;
+    background-color: rgb(159, 159, 159);
+    border-radius: 5px;
+}
+
+.container .label {
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.container input:focus {
+    box-shadow: 0px 0px 20px 3px;
+    outline: none;
+}
+
+.container input {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: purple;
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    width: 25vw;
+}
+
+.container input::-webkit-input-placeholder {
+    color: white;
+    font-weight: lighter;
+}
+
+.container .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

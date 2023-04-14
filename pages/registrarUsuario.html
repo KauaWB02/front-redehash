@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/registrarUsuario.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="group-form">
+            <h1>Rede<span>Hash</span></h1>
+        </div>
+
+        <div class="group-form">
+            <div class="alert" id="alert"></div>
+        </div>
+
+        <div class="group-form">
+
+            <div class="label">
+                <label for="name">Nome</label>
+
+            </div>
+            <input type="text" name="name" id="name" placeholder="Nome de usuário" onchange="validandoCampos()" required>
+        </div>
+
+        <div class="group-form">
+
+            <div class="label">
+                <label for="email">E-mail</label>
+
+            </div>
+            <input type="text" name="email" id="email" placeholder="Exemple: junin@gmail.com" onchange="validandoCampos()" required>
+        </div>
+
+        <div class="group-form">
+            <div class="label">
+                <label for="password">Senha</label>
+            </div>
+            <input type="password" name="password2" id="password" onchange="validandoCampos()" required>
+        </div>
+
+        <div class="group-form">
+            <div class="label">
+                <label for="password2">Digite novamente a senha</label>
+            </div>
+            <input type="password" name="password2" id="password2" onchange="validandoCampos()" required>
+        </div>
+
+        <div class="buttons">
+            <div class="group-form">
+                <button>Criar</button>
+            </div>
+            <div class="group-form">
+                <a href="../index.html">Voltar para login</a>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/registrarUsuario.js"></script>
+</body>
+
+</html>
