@@ -40,6 +40,7 @@ header ul li a {
   font-weight: bold;
   text-decoration: none;
   padding: 10px;
+  cursor: pointer;
 }
 
 header ul li a:hover {
@@ -63,6 +64,17 @@ header ul li a:hover {
   background-color: wheat;
   padding: 15px;
   border-radius: 5px;
+}
+
+.background-conteudo button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #a70606;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .container .post .info-postagem {
@@ -173,4 +185,159 @@ header ul li a:hover {
 .post .comments .conteudo-comment .comment {
   text-indent: 5px;
 
+}
+
+.post .comments .conteudo-comment button {
+  width: 50px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.menu-amigos {
+  background-color: white;
+  background-color: white;
+  width: 18%;
+  height: 180px;
+  position: absolute;
+  flex-direction: column;
+  padding: 15px;
+  left: 470px;
+  top: 42px;
+  border-radius: 3px;
+  overflow: scroll;
+  display: none;
+}
+
+.menu-amigos .amigos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 6px;
+  border-bottom: 1px solid gray;
+}
+
+.menu-amigos .amigos button {
+  cursor: pointer;
+}
+
+.menu-solicitacao {
+  background-color: white;
+  width: 18%;
+  height: 180px;
+  position: absolute;
+  flex-direction: column;
+  padding: 15px;
+  left: 746px;
+  top: 42px;
+  border-radius: 3px;
+  overflow: scroll;
+  display: none;
+}
+
+.menu-solicitacao .solicitacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 6px;
+  border-bottom: 1px solid gray;
+}
+
+.menu-solicitacao .solicitacao button {
+  cursor: pointer;
+}
+
+.menu-talvez {
+  background-color: white;
+  width: 18%;
+  height: 180px;
+  position: absolute;
+  flex-direction: column;
+  padding: 15px;
+  left: 1093px;
+  top: 42px;
+  border-radius: 3px;
+  overflow: scroll;
+  display: none;
+}
+
+.menu-talvez .talvez {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 6px;
+  border-bottom: 1px solid gray;
+}
+
+.menu-talvez .talvez button {
+  cursor: pointer;
+}
+
+
+.info-usuario {
+  margin: auto;
+  margin-top: 30px;
+  background-color: white;
+  padding: 15px;
+
+}
+
+.info-usuario .name {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.info-usuario .name>span {
+  font-weight: bold;
+}
+
+.form-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.group-form {
+  margin-bottom: 10px;
+}
+
+.group-form button {
+  padding: 10px;
+  border: none;
+  background-color: purple;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  width: 5vw;
+}
+
+.group-form h1 {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.group-form .alert {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  color: black;
+  background-color: orange;
+  border-radius: 5px;
+  display: none;
+}
+
+.group-form a {
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+}
+
+.group-form h1>span {
+  color: purple;
 }

@@ -5,111 +5,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RedeHash | Feed</title>
+  <title>RedeHash</title>
   <link rel="stylesheet" href="../style/homeStyle.css">
+  <script src="../javascript/jwt.js"></script>
+  <script src="../javascript/post.js"></script>
+  <script src="../javascript/amigos.js"></script>
 </head>
 
 <body>
   <header>
     <ul>
-      <li><a href="http://">Perfil</a></li>
-      <li><a href="http://">Amigos</a></li>
-      <li><a href="http://">Solicitações</a></li>
+      <li><a href="../pages/home.html">Home</a></li>
+      <li><a href="../pages/perfil.html">Perfil</a></li>
+      <li><a onclick="carregarAmigos()">Amigos</a></li>
+      <li><a onclick="carregarSolicitacoes()">Solicitações</a></li>
+      <li><a onclick="talvezAmigos()">Pessoas que talvez você conheça</a></li>
     </ul>
   </header>
 
-  <div class="container">
-    <div class="post">
-      <div class="background-conteudo">
-        <div class="info-postagem">
-          <p>Kauã Wadson</p>
-          <p>14/04/2023</p>
-        </div>
+  <div class="menu-amigos" id="menu-amigos">
 
-        <div class="conteudo">
-          <div class="title">
-            <h1>Testando</h1>
-          </div>
-          <div class="img">
-            <img src="../img/one-piece-1.webp">
-          </div>
-          <div class="texto">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque tempora sit, veritatis atque, ipsum quidem
-            maxime mollitia ea velit facere molestias tenetur aliquid nam voluptates aliquam, iste consequatur nulla
-            earum!
-          </div>
-        </div>
-
-      </div>
-      <div class="comments">
-        <div class="input-comments">
-
-          <input type="text" name="comment" id="comment" placeholder="Commente nessa publicação!">
-          <button>Comentar</button>
-
-        </div>
-
-        <div class="conteudo-comment">
-          <div class="info-comment">
-            <p>Kauã Wadson</p>
-            <p>14/04/2023</p>
-          </div>
-          <div class="comment">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam officiis natus accusantium, ut ipsum
-            ipsam amet atque labore pariatur similique dicta doloribus deserunt corporis incidunt perspiciatis vitae
-            delectus laudantium eligendi?
-          </div>
-        </div>
-        <div class="conteudo-comment">
-          <div class="info-comment">
-            <p>Kauã Wadson</p>
-            <p>14/04/2023</p>
-          </div>
-          <div class="comment">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam officiis natus accusantium, ut ipsum
-            ipsam amet atque labore pariatur similique dicta doloribus deserunt corporis incidunt perspiciatis vitae
-            delectus laudantium eligendi?
-          </div>
-        </div>
-        <div class="conteudo-comment">
-          <div class="info-comment">
-            <p>Kauã Wadson</p>
-            <p>14/04/2023</p>
-          </div>
-          <div class="comment">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam officiis natus accusantium, ut ipsum
-            ipsam amet atque labore pariatur similique dicta doloribus deserunt corporis incidunt perspiciatis vitae
-            delectus laudantium eligendi?
-          </div>
-        </div>
-        <div class="conteudo-comment">
-          <div class="info-comment">
-            <p>Kauã Wadson</p>
-            <p>14/04/2023</p>
-          </div>
-          <div class="comment">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam officiis natus accusantium, ut ipsum
-            ipsam amet atque labore pariatur similique dicta doloribus deserunt corporis incidunt perspiciatis vitae
-            delectus laudantium eligendi?
-          </div>
-        </div>
-        <div class="conteudo-comment">
-          <div class="info-comment">
-            <p>Kauã Wadson</p>
-            <p>14/04/2023</p>
-          </div>
-          <div class="comment">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam officiis natus accusantium, ut ipsum
-            ipsam amet atque labore pariatur similique dicta doloribus deserunt corporis incidunt perspiciatis vitae
-            delectus laudantium eligendi?
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    
   </div>
+
+  <div class="menu-solicitacao" id="menu-solicitacao">
+
+  </div>
+
+  <div class="menu-talvez" id="menu-talvez">
+  </div>
+
+
+
+
+  <div class="container" id="container">
+    <div class="background-conteudo">
+      <div class="form-post">
+        <div class="group-form">
+
+          <div class="label">
+            <label for="title">Titulo</label>
+
+          </div>
+          <input type="text" name="title" id="title" placeholder="Titulo do post" required>
+        </div>
+        <div class="group-form">
+
+          <div class="label">
+            <label for="description">Descrição</label>
+
+          </div>
+          <input type="text" name="description" id="description" placeholder="Descrição do post" required>
+        </div>
+        <div class="group-form">
+
+          <div class="label">
+            <label for="link">Link da imagem</label>
+
+          </div>
+          <input type="text" name="link" id="link" placeholder="Descrição do post" required>
+        </div>
+
+        <div class="group-form">
+          <button onclick="postar()">Postar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 </body>

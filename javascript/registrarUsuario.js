@@ -42,12 +42,42 @@ function validandoCampos() {
   }
 }
 
-// if (!password2.value) {
-//     password2.style.border = '3px solid red';
-//     alert.style.display = 'block';
-//     alert.innerHTML = 'Senha não pode ser vazia <br/>';
-// } else {
-//     password2.style.border = 'none';
-//     alert.style.display = 'none';
-//     alert.innerHTML = '';
-// }
+async function criarConta() {
+  const email = document.getElementById('email');
+  const password = document.getElementById('password');
+  const name = document.getElementById('name');
+
+  const alert = document.getElementById('alert');
+
+  const objectBody = {
+    name: name.value,
+    email: email.value,
+    password: password.value,
+  };
+  await requisicao('http://localhost:3000/user', objectBody, 'POST').then(
+    (data) => {
+      if (data) {
+        window.location = '/';
+      } else {
+        alert.style.display = 'block';
+        alert.innerHTML = 'Não foi possivel cadastrar usuário';
+      }
+    }
+  );
+}
+
+async function requisicao(url, body, tipoRequisicao) {
+  try {
+    const response = await fetch(url, {
+      method: tipoRequisicao,
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(body),
+    });
+
+    let dados = await response.json();
+
+    return dados;
+  } catch (error) {
+    console.log(error);
+  }
+}

@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RedeHash | Criação de conta</title>
     <link rel="stylesheet" href="../style/registrarUsuario.css">
+    <script src="../javascript/registrarUsuario.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,8 @@
                 <label for="name">Nome</label>
 
             </div>
-            <input type="text" name="name" id="name" placeholder="Nome de usuário" onchange="validandoCampos()" required>
+            <input type="text" name="name" id="name" placeholder="Nome de usuário" onchange="validandoCampos()"
+                required>
         </div>
 
         <div class="group-form">
@@ -34,14 +36,15 @@
                 <label for="email">E-mail</label>
 
             </div>
-            <input type="text" name="email" id="email" placeholder="Exemple: junin@gmail.com" onchange="validandoCampos()" required>
+            <input type="text" name="email" id="email" placeholder="Exemple: junin@gmail.com"
+                onchange="validandoCampos()" required>
         </div>
 
         <div class="group-form">
             <div class="label">
                 <label for="password">Senha</label>
             </div>
-            <input type="password" name="password2" id="password" onchange="validandoCampos()" required>
+            <input type="password" name="password" id="password" onchange="validandoCampos()" required>
         </div>
 
         <div class="group-form">
@@ -53,14 +56,13 @@
 
         <div class="buttons">
             <div class="group-form">
-                <button>Criar</button>
+                <button onclick="criarConta()">Criar</button>
             </div>
             <div class="group-form">
                 <a href="../index.html">Voltar para login</a>
             </div>
         </div>
     </div>
-    <script src="../javascript/registrarUsuario.js"></script>
 </body>
 
 </html>
